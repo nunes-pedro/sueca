@@ -1,0 +1,207 @@
+{
+    "_comment": "For simplicity reasons the following cards will have the numbers: ",
+    "_comment2": "Ace: 21, 7: 20,King: 14,Queen: 12, Jack: 13",
+    "deck": [
+        {
+            "suit": "Heart",
+            "number": 2,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 3,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 4,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 5,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 6,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 12,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 13,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 14,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 20,
+            "points": 0
+        },
+        {
+            "suit": "Heart",
+            "number": 21,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 2,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 3,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 4,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 5,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 6,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 12,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 13,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 14,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 20,
+            "points": 0
+        },
+        {
+            "suit": "Diamond",
+            "number": 21,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 2,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 3,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 4,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 5,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 6,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 12,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 13,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 14,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 20,
+            "points": 0
+        },
+        {
+            "suit": "Spade",
+            "number": 21,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 2,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 3,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 4,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 5,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 6,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 12,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 13,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 14,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 20,
+            "points": 0
+        },
+        {
+            "suit": "Club",
+            "number": 21,
+            "points": 0
+        }
+    ],
+    "buffer": 10
+}
