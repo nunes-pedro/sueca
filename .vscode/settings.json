@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/bin/python3.6",
+    "python.pythonPath": "E:\\Programs\\Python\\Python37\\python.exe",
     "python.formatting.autopep8Args": [
         "--ignore",
         "E402",

@@ -1,6 +1,7 @@
 import json
 from Card import Card
 import random
+import os
 
 
 class Deck:
@@ -9,7 +10,9 @@ class Deck:
 
     def __init__(self):
         self.cards = []
-        with open('/usr/SuecaPY/src/deck.json') as json_file:
+        dirname = os.path.dirname(__file__)
+
+        with open(os.path.join(dirname, 'deck.json')) as json_file:
             data = json.load(json_file)
             buffer = data['buffer']
             for p in data['deck']:
