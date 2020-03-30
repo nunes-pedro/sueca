@@ -1,7 +1,14 @@
 {
-    "python.pythonPath": "E:\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "/usr/bin/python3.6",
     "python.formatting.autopep8Args": [
         "--ignore",
         "E402",
     ],
+    //"liveServer.settings.root": "/templates",
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "http://192.168.2.101:80"
+    }
 }

@@ -1,6 +1,7 @@
 from Deck import Deck
 from Player import Player
 from Table import Table
+import jsonpickle
 
 
 def main():
@@ -14,6 +15,7 @@ def main():
     p3.getHand(deck)
     p4 = Player()
     p4.getHand(deck)
+    pjson = jsonpickle.encode(p4)
  #   deck.shuffleDeck(2)
  #   deck.cutDeck(.98)
     t = Table()
@@ -23,6 +25,8 @@ def main():
     t.sitPlayer(p3)
     t.sitPlayer(p4)
 
+    tJson = jsonpickle.encode(t)
+    test = jsonpickle.decode(tJson)
     print("control")
 
 

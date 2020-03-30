@@ -5,12 +5,12 @@ from Card import Card  # decide if it remains here
 class Player:
     """This class is responsible for player actions """
 
-    def __init__(self):
+    def __init__(self, uid=' '):
         self.role = 'Not_Assigned'
         #self.tableSpot = order
         self.hand = []
         # TODO: message for new user and request input
-        self.uid = ' '
+        self.uid = uid
 
     def getHand(self, deck):
         for i in range(10):
