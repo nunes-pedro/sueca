@@ -10,5 +10,7 @@
         "enable": true,
         "baseUri": "/",
         "proxyUri": "http://192.168.2.101:80"
-    }
+    },
+    "cSpell.language": ",pt,pt_PT",
+    "cSpell.enabled": false
 }

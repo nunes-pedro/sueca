@@ -5,8 +5,9 @@ from Card import Card  # decide if it remains here
 class Player:
     """This class is responsible for player actions """
 
-    def __init__(self, uid=' '):
+    def __init__(self, uid=' ', ip=' '):
         self.role = 'Not_Assigned'
+        self._ip = ip
         #self.tableSpot = order
         self.hand = []
         # TODO: message for new user and request input
@@ -18,6 +19,9 @@ class Player:
 
     def assignRole(self, role):
         self.role = role
+
+    def getIP(self):
+        return self._ip
 
     def doJob(self, deck):
         if(self.role == 'shuffler'):

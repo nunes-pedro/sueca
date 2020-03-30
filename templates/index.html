@@ -6,6 +6,10 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
     <script type="text/javascript" src={{url_for('static',filename='connectAction.js')}}></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- <script>window.jQuery || document.write('<script src="{{url_for('static', filename = 'jquery.js') }}">\x3C/script>')</script> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,6 +18,24 @@
 <body>
     HI tho!
     Player has one role {{ role }}
+    <p>
+
+        <button onclick="newUser()"> Novo Utilizador</button>
+    </p>
+
+    <script>
+        function newUser() {
+            var txt;
+            var person = prompt("Please enter your name:", "  ");
+            if (person == null || person == "") {
+                txt = "None";
+            } else {
+                txt = person;
+            }
+            $.post("/", { "uid": txt });
+            return 'OK'
+        }
+    </script>
 </body>
 
 </html>

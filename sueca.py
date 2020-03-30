@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit
 import jsonpickle
 import time
@@ -13,7 +13,7 @@ socketio = SocketIO(app)
 
 thread = None
 iteration = 0
-
+users = []
 
 """ def background_thread():
     global iteration
@@ -33,9 +33,30 @@ def connect():
    #     thread = socketio.start_background_task(target=background_thread)
 
 
-@app.route("/")
+@app.route("/", methods=['POST', 'GET'])
 def hello():
-    return render_template('index.html', role='ya')
+    if(request.method == "POST"):
+        global users
+        stop = False
+        ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
+        uuid = request.form['uid']
+        for u in users:
+            if(ip == u.getIP()):
+                message = 'User already created player.'
+                print(message)
+                serversend(message)
+                stop = True
+        if(uuid is not None and stop is False):
+            if(type(uuid) == str):
+                p = Player(uuid, str(ip))
+                users.append(p)
+            else:
+                pass
+        else:
+            pass
+        return 'OK'
+    else:
+        return render_template('index.html', role='ya')
 
 
 @socketio.on('sweetroom')
